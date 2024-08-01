@@ -31,7 +31,7 @@ jobs:
           CI: true
 
       - name: View Supplier
-        uses: classroom-resources/autograding-grading-reporter@main
+        uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: View Supplier
           command: npx cypress run --spec cypress/e2e/1-view-supplier.cy.ts
@@ -39,7 +39,7 @@ jobs:
           max-score: 10
 
       - name: View Supplier Date Validation
-        uses: classroom-resources/autograding-grading-reporter@main
+        uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: View Supplier Date Validation
           command: npx cypress run --spec cypress/e2e/2-view-supplier-date-validation.cy.ts
@@ -47,7 +47,7 @@ jobs:
           max-score: 10
 
       - name: Add Supplier Button Validation
-        uses: classroom-resources/autograding-grading-reporter@main
+        uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: Add Supplier Button Validation
           command: npx cypress run --spec cypress/e2e/3-add-supplier-button-validation.cy.ts
@@ -55,7 +55,7 @@ jobs:
           max-score: 10
 
       - name: Add Supplier Reset
-        uses: classroom-resources/autograding-grading-reporter@main
+        uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: Add Supplier Reset
           command: npx cypress run --spec cypress/e2e/4-add-supplier-reset.cy.ts
@@ -63,7 +63,7 @@ jobs:
           max-score: 10
 
       - name: Add Supplier
-        uses: classroom-resources/autograding-grading-reporter@main
+        uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: Add Supplier
           command: npx cypress run --spec cypress/e2e/5-add-supplier.cy.ts
